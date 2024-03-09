@@ -9,14 +9,8 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 @CapacitorPlugin(name = "ClearCache")
 public class ClearCachePlugin extends Plugin {
 
-    private ClearCache implementation = new ClearCache();
-
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+    public void clear(PluginCall call) {
+        call.unimplemented("Clearing cache is not implemented on Android");
     }
 }
