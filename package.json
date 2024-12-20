@@ -1,6 +1,6 @@
 {
   "name": "capacitor-clear-cache",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Clear various app caches",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
